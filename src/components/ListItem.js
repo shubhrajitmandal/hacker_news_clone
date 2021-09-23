@@ -38,12 +38,15 @@ const Index = styled.div`
     margin-right: 10px;
   }
 `;
-
 const StyledChangeHistoryIcon = styled(ChangeHistoryIcon)`
   margin-right: 10px;
   :hover {
     cursor: pointer;
     fill: #ff6600;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin: 0;
   }
 `;
 const Content = styled.div`

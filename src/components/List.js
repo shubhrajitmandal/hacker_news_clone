@@ -25,8 +25,10 @@ const Pagination = styled.div`
     font-size: 15px;
   }
 
-  @media screen and (max-width: 750px) {
-    width: calc(100% - 60px);
+  @media screen and (max-width: 768px) {
+    padding: 15px auto;
+    width: 100%;
+    justify-content: center;
   }
 `;
 const Button = styled.button`
@@ -62,12 +64,12 @@ const Footer = styled.ul`
     border-right: 1px solid #adadad;
     cursor: pointer;
   }
-
   li:last-child {
     border: none;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 480px) {
+    width: 80%;
     font-size: 14px;
   }
 `;
@@ -80,6 +82,15 @@ const Search = styled.div`
     font-size: 16px;
     color: #454545;
     outline: #454545;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+
+    input {
+      padding: 4px 8px;
+      font-size: 14px;
+    }
   }
 `;
 
@@ -105,7 +116,7 @@ const List = () => {
   return (
     <ListWrapper>
       {page.map((id, num) => (
-        <ListItem id={id} index={index} num={num} />
+        <ListItem key={id} id={id} index={index} num={num} />
       ))}
       <Pagination>
         <Button onClick={handlePrev} disabled={index === 0}>

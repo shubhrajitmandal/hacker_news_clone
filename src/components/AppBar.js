@@ -13,15 +13,17 @@ const Navbar = styled.nav`
     padding: 10px 30px;
   }
 `;
-
+const StyledLink = styled(Link)`
+  && {
+    height: 30px;
+  }
+`;
 const Logo = styled.img`
   margin-right: 20px;
   width: 30px;
   height: 30px;
 
   @media screen and (max-width: 600px) {
-    width: 25px;
-    height: 25px;
     margin-right: 10px;
   }
 `;
@@ -64,9 +66,9 @@ const AppBar = () => {
 
   return (
     <Navbar>
-      <Link to="/">
+      <StyledLink to="/">
         <Logo src={logo} />
-      </Link>
+      </StyledLink>
       <NavList>
         <NavLink to="/new" path={location.pathname}>
           New
