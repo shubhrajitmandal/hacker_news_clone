@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import styled from "styled-components";
+import AppBar from "./components/AppBar";
+import List from "./components/List";
 
-function App() {
+const AppWrapper = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+`;
+
+const Container = styled.div`
+  margin: auto;
+  width: 80%;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWrapper>
+      <Router>
+        <Container>
+          <AppBar />
+          <Switch>
+            <Route path="/" component={List} />
+          </Switch>
+        </Container>
+      </Router>
+    </AppWrapper>
   );
-}
+};
 
 export default App;
