@@ -6,7 +6,7 @@ const ArticlePreview = styled.div`
   margin: auto;
   min-width: 500px;
   min-height: 300px;
-  max-height: 600px;
+  max-height: 90%;
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -14,6 +14,7 @@ const ArticlePreview = styled.div`
   background: #ffffff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.32) 0px 3px 8px;
+  overflow: auto;
 
   @media screen and (max-width: 600px) {
     min-width: 400px;
