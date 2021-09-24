@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# About
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a clone of Hacker News (https://news.ycombinator.com/) built using React and Hacker News API (https://github.com/HackerNews/API).
+
+Visit site: https://vigorous-rosalind-12615a.netlify.app/
 
 ## Available Scripts
 
