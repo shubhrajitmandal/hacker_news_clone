@@ -2,7 +2,16 @@
 
 This is a clone of Hacker News (https://news.ycombinator.com/) built using React and Hacker News API (https://github.com/HackerNews/API).
 
+Enable CORS: https://cors-anywhere.herokuapp.com/
 Visit site: https://vigorous-rosalind-12615a.netlify.app/
+
+![scrnli_9_24_2021_3-45-01 AM](https://user-images.githubusercontent.com/25386222/134759436-02164735-6119-4385-9379-3d7eefd2a42c.png)
+
+![scrnli_9_24_2021_3-52-00 AM](https://user-images.githubusercontent.com/25386222/134759438-95e41f4a-04e1-4824-a490-0f0a65e05557.png)
+
+![scrnli_9_24_2021_3-44-42 AM](https://user-images.githubusercontent.com/25386222/134759458-67f32785-2def-4552-a070-d969249d6469.png)
+
+
 
 ## Available Scripts
 
@@ -21,7 +30,7 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `npm run build`!
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
